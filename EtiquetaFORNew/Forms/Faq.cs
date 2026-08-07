@@ -47,5 +47,10 @@ namespace EtiquetaFORNew.Forms
         {
             Process.Start("https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/9321");
         }
+
+        private void linklbl9356_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://helptools.softcomsistemas.com.br/core/promover/detalhe/id/9356");
+        }
     }
 }

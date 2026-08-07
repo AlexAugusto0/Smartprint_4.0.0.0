@@ -713,6 +713,7 @@ namespace EtiquetaFORNew.Forms
                 Location = new Point(125, yPos + 5),
                 Size = new Size(70, 25),
                 Font = new Font("Segoe UI", 9, FontStyle.Bold),
+                ForeColor = Color.White,
                 TextAlign = ContentAlignment.MiddleCenter
             };
             panelConfiguracao.Controls.Add(lblZoomPercentual);

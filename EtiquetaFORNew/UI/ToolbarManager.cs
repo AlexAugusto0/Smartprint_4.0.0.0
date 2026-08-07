@@ -69,7 +69,7 @@ namespace EtiquetaFORNew.UI
                 AutoSize = false,
                 Size = new Size(54, 34),
                 Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold),
-                ForeColor = ThemeManager.TextPrimary,
+                ForeColor = Color.White,
                 TextAlign = ContentAlignment.MiddleCenter,
                 Margin = new Padding(2, 2, 2, 4)
             };

@@ -558,6 +558,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="etiqueta-icone-softcom.ico" />
+    <None Include="Resources\Sincronizando40.jpg" />
+    <None Include="Resources\EngrenagemBlack %282%29.png" />
+    <None Include="Resources\EngrenagemBlack.png" />
+    <None Include="Resources\Engrenagem 40 %282%29.png" />
+    <None Include="Resources\Engrenagem 40.png" />
     <None Include="Resources\Screenshot_1.jpg" />
     <None Include="Resources\Drivers1.jpg" />
     <None Include="Resources\calibracao3.png" />

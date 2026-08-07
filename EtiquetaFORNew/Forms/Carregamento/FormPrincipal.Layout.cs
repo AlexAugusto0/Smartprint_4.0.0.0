@@ -96,9 +96,9 @@ namespace EtiquetaFORNew
                 WrapContents = false,
                 Margin = Padding.Empty
             };
-            ConfigureToolbarButton(btnConfig);
-            ConfigureToolbarButton(btnSincronizar);
-            ConfigureToolbarButton(btnCalibracao);
+            //ConfigureToolbarButton(btnConfig);
+            //ConfigureToolbarButton(btnSincronizar);
+            //ConfigureToolbarButton(btnCalibracao);
             btnDesigner.Width = 174;
             btnDesigner.Margin = new Padding(8, 2, 4, 2);
             ThemeManager.StyleActionButton(btnDesigner, true);
@@ -296,7 +296,7 @@ namespace EtiquetaFORNew
             searchFieldsLayout.BackColor = ThemeManager.PanelBackground;
 
             lblTitulo.Font = ThemeManager.HeaderFont;
-            lblTitulo.ForeColor = ThemeManager.TextPrimary;
+            //lblTitulo.ForeColor = ThemeManager.TextPrimary;
             chkSelecionarTodos.Font = ThemeManager.ButtonFont;
             chkSelecionarTodos.ForeColor = ThemeManager.TextPrimary;
             BtnFaq.BackColor = ThemeManager.PanelBackground;

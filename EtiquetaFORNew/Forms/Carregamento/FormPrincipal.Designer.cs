@@ -404,7 +404,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.ForeColor = System.Drawing.Color.Black;
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(80, 6);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(421, 30);
@@ -477,11 +477,11 @@
             // 
             // btnSincronizar
             // 
-            this.btnSincronizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnSincronizar.BackColor = System.Drawing.Color.White;
+            this.btnSincronizar.BackgroundImage = global::EtiquetaFORNew.Properties.Resources.Sincronizando3;
             this.btnSincronizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSincronizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSincronizar.FlatAppearance.BorderSize = 0;
-            this.btnSincronizar.Image = global::EtiquetaFORNew.Properties.Resources.Sincronizando3;
             this.btnSincronizar.Location = new System.Drawing.Point(902, 6);
             this.btnSincronizar.Name = "btnSincronizar";
             this.btnSincronizar.Size = new System.Drawing.Size(45, 34);
@@ -492,11 +492,11 @@
             // 
             // btnConfig
             // 
-            this.btnConfig.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfig.BackColor = System.Drawing.Color.White;
+            this.btnConfig.BackgroundImage = global::EtiquetaFORNew.Properties.Resources.Engrenagem20x20;
             this.btnConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnConfig.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfig.FlatAppearance.BorderSize = 0;
-            this.btnConfig.Image = global::EtiquetaFORNew.Properties.Resources.Engrenagem20x20;
             this.btnConfig.Location = new System.Drawing.Point(953, 6);
             this.btnConfig.Name = "btnConfig";
             this.btnConfig.Size = new System.Drawing.Size(45, 34);

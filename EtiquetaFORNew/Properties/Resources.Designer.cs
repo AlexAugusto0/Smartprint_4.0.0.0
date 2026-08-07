@@ -143,6 +143,26 @@ namespace EtiquetaFORNew.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Engrenagem_40 {
+            get {
+                object obj = ResourceManager.GetObject("Engrenagem 40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Engrenagem_40__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Engrenagem 40 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Engrenagem2 {
             get {
                 object obj = ResourceManager.GetObject("Engrenagem2", resourceCulture);
@@ -156,6 +176,26 @@ namespace EtiquetaFORNew.Properties {
         internal static System.Drawing.Bitmap Engrenagem20x20 {
             get {
                 object obj = ResourceManager.GetObject("Engrenagem20x20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EngrenagemBlack {
+            get {
+                object obj = ResourceManager.GetObject("EngrenagemBlack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EngrenagemBlack__2_ {
+            get {
+                object obj = ResourceManager.GetObject("EngrenagemBlack (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -336,6 +376,16 @@ namespace EtiquetaFORNew.Properties {
         internal static System.Drawing.Bitmap Sincronizando3 {
             get {
                 object obj = ResourceManager.GetObject("Sincronizando3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sincronizando40 {
+            get {
+                object obj = ResourceManager.GetObject("Sincronizando40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

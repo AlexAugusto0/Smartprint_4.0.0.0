@@ -69,6 +69,7 @@ namespace EtiquetaFORNew
             // 
             // cboTipoConexao
             // 
+            this.cboTipoConexao.BackColor = System.Drawing.Color.White;
             this.cboTipoConexao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoConexao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cboTipoConexao.FormattingEnabled = true;
@@ -98,6 +99,7 @@ namespace EtiquetaFORNew
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox4);
@@ -136,6 +138,7 @@ namespace EtiquetaFORNew
             // 
             // txtUrlDispositivo
             // 
+            this.txtUrlDispositivo.BackColor = System.Drawing.SystemColors.Window;
             this.txtUrlDispositivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtUrlDispositivo.Location = new System.Drawing.Point(13, 38);
             this.txtUrlDispositivo.Multiline = true;
@@ -167,6 +170,7 @@ namespace EtiquetaFORNew
             // 
             // txtDeviceName
             // 
+            this.txtDeviceName.BackColor = System.Drawing.Color.White;
             this.txtDeviceName.Location = new System.Drawing.Point(13, 120);
             this.txtDeviceName.Name = "txtDeviceName";
             this.txtDeviceName.ReadOnly = true;
@@ -184,6 +188,7 @@ namespace EtiquetaFORNew
             // 
             // txtEmpresaCNPJ
             // 
+            this.txtEmpresaCNPJ.BackColor = System.Drawing.Color.White;
             this.txtEmpresaCNPJ.Location = new System.Drawing.Point(323, 75);
             this.txtEmpresaCNPJ.Mask = "00.000.000/0000-00";
             this.txtEmpresaCNPJ.Name = "txtEmpresaCNPJ";
@@ -202,6 +207,7 @@ namespace EtiquetaFORNew
             // 
             // txtEmpresaName
             // 
+            this.txtEmpresaName.BackColor = System.Drawing.Color.White;
             this.txtEmpresaName.Location = new System.Drawing.Point(323, 30);
             this.txtEmpresaName.Name = "txtEmpresaName";
             this.txtEmpresaName.ReadOnly = true;
@@ -219,6 +225,7 @@ namespace EtiquetaFORNew
             // 
             // txtClientSecret
             // 
+            this.txtClientSecret.BackColor = System.Drawing.Color.White;
             this.txtClientSecret.Location = new System.Drawing.Point(13, 165);
             this.txtClientSecret.Name = "txtClientSecret";
             this.txtClientSecret.ReadOnly = true;
@@ -237,6 +244,7 @@ namespace EtiquetaFORNew
             // 
             // txtClientId
             // 
+            this.txtClientId.BackColor = System.Drawing.Color.White;
             this.txtClientId.Location = new System.Drawing.Point(13, 75);
             this.txtClientId.Name = "txtClientId";
             this.txtClientId.ReadOnly = true;
@@ -254,6 +262,7 @@ namespace EtiquetaFORNew
             // 
             // txtBaseURL
             // 
+            this.txtBaseURL.BackColor = System.Drawing.Color.White;
             this.txtBaseURL.Location = new System.Drawing.Point(13, 30);
             this.txtBaseURL.Name = "txtBaseURL";
             this.txtBaseURL.ReadOnly = true;
@@ -288,6 +297,7 @@ namespace EtiquetaFORNew
             // 
             // comboModuloApp
             // 
+            this.comboModuloApp.BackColor = System.Drawing.Color.White;
             this.comboModuloApp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboModuloApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.comboModuloApp.FormattingEnabled = true;
@@ -333,6 +343,7 @@ namespace EtiquetaFORNew
             // 
             // txtDeviceId
             // 
+            this.txtDeviceId.BackColor = System.Drawing.Color.White;
             this.txtDeviceId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtDeviceId.Location = new System.Drawing.Point(13, 43);
             this.txtDeviceId.MaxLength = 50;
@@ -389,6 +400,7 @@ namespace EtiquetaFORNew
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(684, 576);
             this.Controls.Add(this.btnReport);
             this.Controls.Add(this.btnCancelar);

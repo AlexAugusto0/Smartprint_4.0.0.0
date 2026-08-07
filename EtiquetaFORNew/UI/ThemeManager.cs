@@ -23,7 +23,7 @@ namespace EtiquetaFORNew.UI
         public static Color Border => Color.FromArgb(218, 221, 226);
         public static Color HeaderBackground => Color.FromArgb(70, 73, 76);
         public static Color HeaderText => Color.White;
-        public static Color ToolbarBackground => Color.White;
+        public static Color ToolbarBackground => Color.FromArgb(70, 73, 76); //White;
         public static Color StatusBackground => Color.FromArgb(248, 249, 250);
         public static Color Danger => Color.FromArgb(211, 47, 47);
         public static Color Disabled => Color.FromArgb(238, 239, 241);

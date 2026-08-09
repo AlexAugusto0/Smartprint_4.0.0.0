@@ -16,7 +16,7 @@ namespace EtiquetaFORNew.UI
         //public static Color WorkspaceBackground => Color.FromArgb(230, 231, 234);
         public static Color WorkspaceBackground => Color.FromArgb(240, 235, 255);
         public static Color SmartPrintOrange => Color.FromArgb(245, 124, 0);
-        public static Color SmartPrintOrangeDark => Color.FromArgb(230, 103, 0);
+        public static Color SmartPrintOrangeDark => Color.FromArgb(151, 83, 0);// (230, 103, 0);
         public static Color TextPrimary => Color.FromArgb(51, 51, 51);        
         public static Color TextSecondary => Color.FromArgb(100, 106, 115);
         public static Color HoverBackground => Color.FromArgb(255, 224, 178);

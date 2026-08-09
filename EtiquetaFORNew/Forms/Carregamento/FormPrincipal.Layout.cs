@@ -32,7 +32,8 @@ namespace EtiquetaFORNew
         {
             AutoScroll = false;
             MinimumSize = new Size(1024, 640);
-            ClientSize = new Size(1180, 720);
+            ClientSize = new Size(1024, 640);
+            // ClientSize = new Size(1180, 720);
             Padding = Padding.Empty;
 
             responsiveRoot = new TableLayoutPanel
@@ -229,7 +230,7 @@ namespace EtiquetaFORNew
         {
             dgvProdutos.Dock = DockStyle.Fill;
             dgvProdutos.Margin = Padding.Empty;
-            dgvProdutos.BorderStyle = BorderStyle.None;
+            dgvProdutos.BorderStyle = BorderStyle.FixedSingle;
             dgvProdutos.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             dgvProdutos.RowTemplate.Height = 28;
             dgvProdutos.ColumnHeadersHeight = 34;

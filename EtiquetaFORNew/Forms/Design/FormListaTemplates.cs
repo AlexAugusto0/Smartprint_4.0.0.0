@@ -5,6 +5,7 @@ using EtiquetaFORNew.UI;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using System.Security;
 
 namespace EtiquetaFORNew
 {
@@ -31,27 +32,31 @@ namespace EtiquetaFORNew
             this.MaximizeBox = false;
             this.MinimizeBox = false;
 
-            
+
 
             Label lblInstrucao = new Label
             {
                 Text = "Selecione um template para carregar:",
                 Location = new Point(20, 10),
                 Size = new Size(300, 20),
-                Font = new Font("Segoe UI", 10, FontStyle.Bold)
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                ForeColor = Color.White,
+                BackColor = Color.FromArgb(70, 73, 76)
             };
             Label lblInstrucao2 = new Label
             {
                 Text = "*Dê dois cliques para carregar:",
                 Location = new Point(25, 30),
                 Size = new Size(200, 20),
-                Font = new Font("Segoe UI", 7, FontStyle.Bold)
+                Font = new Font("Segoe UI", 7, FontStyle.Bold),
+                ForeColor = Color.White,
+                BackColor = Color.FromArgb(70, 73, 76)
             };
 
             lstTemplates = new ListBox
             {
                 Name = "lstTemplates",
-                Location = new Point(30, 50),
+                Location = new Point(23, 50),
                 Size = new Size(440, 230),
                 Font = new Font("Segoe UI", 10),
                 DrawMode = DrawMode.OwnerDrawFixed,
@@ -65,36 +70,39 @@ namespace EtiquetaFORNew
             chkDefinirPadrao = new CheckBox
             {
                 Text = "⭐ Definir como template padrão",
-                Location = new Point(20, 290),
+                Location = new Point(30, 290),
                 Size = new Size(250, 25),
                 Font = new Font("Segoe UI", 9),
-                ForeColor = Color.FromArgb(230, 126, 34)
+                ForeColor = Color.FromArgb(230, 126, 34),
+                BackColor = Color.White
             };
             chkDefinirPadrao.CheckedChanged += ChkDefinirPadrao_CheckedChanged;
 
             Label lblInfo = new Label
             {
                 Text = $"📁 Local: {TemplateManager.ObterPastaTemplates()}",
-                Location = new Point(20, 325),
-                Size = new Size(440, 20),
+                Location = new Point(30, 325),
+                Size = new Size(430, 20),
                 Font = new Font("Segoe UI", 8),
-                ForeColor = Color.Gray
+                ForeColor = Color.Black,
+                BackColor = Color.White
             };
 
             Button btnNovo = new Button
             {
-                Text = "Nova Etiqueta",
-                Location = new Point(20, 355),
+                Text = "Novo",
+                Location = new Point(30, 355),
                 Size = new Size(100, 30)
             };
             ThemeManager.StylePrimaryActionButton(btnNovo);
             btnNovo.Click += (s, e) => NovaEtiqueta();
+            
 
             Button btnExcluir = new Button
             {
                 Text = "Excluir",
                 //Location = new Point(130, 355),
-                Location = new Point(240, 355),
+                Location = new Point(250, 355),
                 Size = new Size(100, 30)
             };
             ThemeManager.StylePrimaryActionButton(btnExcluir);
@@ -104,7 +112,7 @@ namespace EtiquetaFORNew
             {
                 Text = "Renomear",
                 //Location = new Point(240, 355),
-                Location = new Point(130, 355),
+                Location = new Point(140, 355),
                 Size = new Size(100, 30)
             };
 
@@ -115,7 +123,7 @@ namespace EtiquetaFORNew
             {
                 Text = "Carregar",
                 //Location = new Point(260, 355),
-                Location = new Point(370, 355),
+                Location = new Point(360, 355),
                 Size = new Size(100, 30),
                 DialogResult = DialogResult.OK
             };
@@ -137,7 +145,7 @@ namespace EtiquetaFORNew
             Button btnTemplateApi = new Button
             {
                 Text = "Nuvem API",
-                Location = new Point(370, 15),
+                Location = new Point(367, 15),
                 Size = new Size(100, 30)
             };
             ThemeManager.StylePrimaryActionButton(btnTemplateApi);
@@ -154,7 +162,34 @@ namespace EtiquetaFORNew
                 btnNovo, btnExcluir, btnRenomear, btnCarregar, btnTemplateApi, // btnCancelar
             });
 
-            Panel panelBackground = new Panel();
+            {   
+                //Painel do topo do Formulário
+                Panel panelTopground = new Panel();
+                panelTopground.Location = new Point(5, 2);
+                panelTopground.Size = new Size(475, 50);
+                panelTopground.BorderStyle = BorderStyle.FixedSingle;
+                panelTopground.BackColor = Color.FromArgb(70, 73, 76);
+
+                this.Controls.Add(panelTopground);
+                panelTopground.SendToBack();
+
+
+                Panel panelBackground2 = new Panel();
+
+                panelBackground2.Location = new Point(23,285); // X = 10, Y = 20
+                panelBackground2.Size = new Size(440, 110);
+
+                panelBackground2.BorderStyle = BorderStyle.FixedSingle;
+                panelBackground2.BackColor = Color.White;
+
+                this.Controls.Add(panelBackground2);
+                panelBackground2.SendToBack();
+
+                this.Controls.Add(panelBackground2);
+                panelBackground2.SendToBack();
+
+
+                Panel panelBackground = new Panel();
 
             panelBackground.Location = new Point(5, 5); // X = 10, Y = 20
             panelBackground.Size = new Size(475, 400);
@@ -167,6 +202,7 @@ namespace EtiquetaFORNew
 
             this.Controls.Add(panelBackground);
             panelBackground.SendToBack();
+            }
         }
 
         private void LstTemplates_DrawItem(object sender, DrawItemEventArgs e)

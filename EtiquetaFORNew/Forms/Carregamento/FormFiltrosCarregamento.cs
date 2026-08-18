@@ -427,11 +427,7 @@ namespace EtiquetaFORNew
                 DataTable dt = LocalDatabaseManager.ObterGruposDoSQLServer();
 
                 cmbGrupo.Items.Clear();
-                cmbGrupo.Items.Add(""); // Item vazio
-
-                //CarregarComboDistinto(cmbGrupo, "Grupo");
-                //CarregarComboDistinto(cmbFabricante, "Fabricante");
-                //CarregarComboDistinto(cmbFornecedor, "Fornecedor");
+                cmbGrupo.Items.Add(""); // Item vazio                
 
                 if (dt != null && dt.Rows.Count > 0)
                 {
@@ -664,50 +660,7 @@ namespace EtiquetaFORNew
                     dtpDataFinal.Visible = false;
                     break;
             }
-        }
-
-        /// <summary>
-        /// â­ NOVO: Carrega promoçõess ativas no ComboBox
-        /// </summary>
-        //private void CarregarPromocoesAtivas()
-        //{
-        //    try
-        //    {
-        //        Cursor = Cursors.WaitCursor;
-
-        //        DataTable promocoes = PromocoesManager.BuscarPromocoesAtivas();
-
-        //        cmbPromocao.DataSource = null;
-        //        cmbPromocao.Items.Clear();
-
-        //        if (promocoes != null && promocoes.Rows.Count > 0)
-        //        {
-        //            cmbPromocao.DisplayMember = "Descricao";
-        //            cmbPromocao.ValueMember = "ID_Promocao";
-        //            cmbPromocao.DataSource = promocoes;
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show(
-        //                "Não há¡ promoções ativas no momento.",
-        //                "SmartPrint - Aviso",
-        //                MessageBoxButtons.OK,
-        //                MessageBoxIcon.Information);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(
-        //            $"Erro ao carregar promoções:\n{ex.Message}",
-        //            "SmartPrint - Erro",
-        //            MessageBoxButtons.OK,
-        //            MessageBoxIcon.Error);
-        //    }
-        //    finally
-        //    {
-        //        Cursor = Cursors.Default;
-        //    }
-        //}
+        }       
 
         private async void CarregarPromocoesAtivas()
         {

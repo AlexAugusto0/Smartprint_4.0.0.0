@@ -1230,11 +1230,9 @@ namespace EtiquetaFORNew.Data
             return dt;
         }
 
-        // ========================================
-        // ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ‚Â¹ PREÃ‡OS ALTERADOS
-        // ========================================
+        
         /// <summary>
-        /// Carrega produtos com preÃ§os alterados no perÃƒÆ’Ã‚Â­odo
+        /// Carrega produtos com preços alterados no periodo
         /// Equivalente: GeradordeEtiquetas_CarregarAlteracaoPrecos
         /// </summary>
         private static DataTable CarregarPrecosAlterados(
@@ -1404,11 +1402,9 @@ namespace EtiquetaFORNew.Data
             }
         }
 
-        // ========================================
-        // ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ‚Â¹ PROMOÃ‡Ã•ES
-        // ========================================
+        
         /// <summary>
-        /// Carrega produtos em promoÃ§ÃƒÆ’Ã‚Â£o com filtros especÃƒÆ’Ã‚Â­ficos
+        /// Carrega produtos em promoções com filtros especificos
         /// Equivalente: Promocoes_GeradorEtiquetasAnexar
         /// </summary>
         private static DataTable CarregarPromocoes(
@@ -1444,7 +1440,7 @@ namespace EtiquetaFORNew.Data
                         WHERE 1=1
                     ";
 
-                    // TODO: Quando houver tabela de promoÃ§ÃƒÆ’Ã‚Âµes:
+                    // TODO: Quando houver tabela de promoções
                     // query += " INNER JOIN Promocoes p ON m.CodigoMercadoria = p.CodigoMercadoria";
                     // query += " WHERE p.Ativa = 1";
 
@@ -1510,26 +1506,21 @@ namespace EtiquetaFORNew.Data
             }
         }
 
-        // ========================================
-        // ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ‚Â¹ LIMPAR ETIQUETAS EXISTENTES
-        // ========================================
+        
         /// <summary>
-        /// Limpa produtos jÃƒÆ’Ã‚Â¡ carregados (equivalente ao DELETE no SoftShop)
+        /// Limpa produtos carregados (equivalente ao DELETE no SoftShop)
         /// </summary>
         public static bool LimparEtiquetasCarregadas()
         {
-            // Esta funcionalidade pode ser implementada se houver
-            // uma "ÃƒÆ’Ã‚Â¡rea de staging" para produtos carregados
+            // Esta funcionalidade pode ser implementada se houver            
             // Por enquanto, apenas retorna true
             return true;
         }
 
-        // ========================================
-        // Ã°Å¸â€Â¹ MÃƒâ€°TODOS AUXILIARES - LEITURA SEGURA
-        // ========================================
+        
 
         /// <summary>
-        /// LÃƒÂª campo string do reader verificando se existe
+        /// campo string do reader verificando se existe
         /// </summary>
         private static object LerCampoSeguro(SQLiteDataReader reader, string nomeCampo)
         {

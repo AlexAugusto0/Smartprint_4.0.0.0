@@ -777,14 +777,23 @@ namespace EtiquetaFORNew.Data
                     // Normaliza número de nota
                     string numeroNotaParam = numeroNF?.Trim();
 
+                    // Pergunta uma única vez antes de processar os itens da nota (Recomendado)
+                    DialogResult respostaGondola = MessageBox.Show(
+                        "A etiqueta que irá ser utilizada, será Gôndola?",
+                        "Confirmação",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question
+                    );
+                    bool ehGondola = (respostaGondola == DialogResult.Yes);
+
                     // BUSCAR ITENS DA NF
                     string queryNF = @"
-                        SELECT 
-                            [Código da Mercadoria] AS Codigo_Mercadoria,
-                            CODBARRAS AS CodBarras,
-                            Quantidade_Item
-                        FROM memoria_NF_Entrada
-                        WHERE [Nº Nota Fiscal] = @numeroNota";
+                SELECT 
+                    [Código da Mercadoria] AS Codigo_Mercadoria,
+                    CODBARRAS AS CodBarras,
+                    Quantidade_Item
+                FROM memoria_NF_Entrada
+                WHERE [Nº Nota Fiscal] = @numeroNota";
 
                     using (var cmd = new System.Data.SqlClient.SqlCommand(queryNF, connSQL))
                     {
@@ -798,7 +807,16 @@ namespace EtiquetaFORNew.Data
                                 linhasLidas++;
                                 string codigoMercadoria = reader["Codigo_Mercadoria"]?.ToString()?.Trim() ?? "";
                                 string codBarras = reader["CodBarras"]?.ToString()?.Trim() ?? "";
-                                int qtd = ConverterQuantidadeEtiqueta(reader["Quantidade_Item"]);
+
+                                int qtd = 0;
+                                if (ehGondola)
+                                {
+                                    qtd = 1; // Ou o valor padrão que desejar para gôndola
+                                }
+                                else
+                                {
+                                    qtd = ConverterQuantidadeEtiqueta(reader["Quantidade_Item"]);
+                                }
 
                                 // Log temporário para depuração
                                 System.Diagnostics.Debug.WriteLine($"[CarregarNotasEntrada] NF={numeroNotaParam} Item #{linhasLidas}: Codigo='{codigoMercadoria}' CodBarras='{codBarras}' Qtd={qtd}");

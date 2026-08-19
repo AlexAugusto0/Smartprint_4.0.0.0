@@ -209,11 +209,7 @@ namespace EtiquetaFORNew
                 if (!checkBox2.Checked)
                     checkBox2.BackColor = Color.FromArgb(236, 240, 241);
             };
-
-            // Efeito hover para botões
-            //AplicarHoverBotao(btnProcurar, Color.FromArgb(52, 152, 219), Color.FromArgb(41, 128, 185));
-            //AplicarHoverBotao(btnInstalarDriver, Color.FromArgb(46, 204, 113), Color.FromArgb(39, 174, 96));
-            //AplicarHoverBotao(btnDownloadDriver, Color.FromArgb(46, 204, 113), Color.FromArgb(39, 174, 96));
+                        
         }
 
         private void AplicarHoverBotao(Button btn, Color corNormal, Color corHover)
